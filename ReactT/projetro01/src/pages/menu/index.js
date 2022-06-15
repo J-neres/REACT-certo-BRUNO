@@ -10,13 +10,13 @@ export default function Index(){
      const navigate= useNavigate();
     
     useEffect(()=>{
-         if(!storage('asuario-logado')){
+         if(!storage('usuario-logado')){
            navigate('/login')
          } 
     }, [])
 
     function sairClick(){
-       storage.remove('asuario-logado');
+       storage.remove('usuario-logado');
        navigate('/login')
     }
 

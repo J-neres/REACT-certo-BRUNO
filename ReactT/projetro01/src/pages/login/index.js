@@ -19,7 +19,7 @@ export default function Index() {
     const ref = useRef();
     
     useEffect(() => {
-        if(storage('asuario-logado'))
+        if(storage('usuario-logado'))
             navigate('/menu') ;
     }, [])
     
@@ -31,7 +31,7 @@ export default function Index() {
          try{
               const r = await login(email,senha);
               alert('foi')
-              storage('asuario-logado', r);
+              storage('usuario-logado', r);
               
 
             setTimeout(()=>{

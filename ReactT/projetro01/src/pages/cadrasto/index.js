@@ -29,7 +29,7 @@ const [id,setId] = useState(0);
 
 async function botaoCadastrar(){
     try{
-        const usuario = storage('asuario-logado').id;
+        const usuario = storage('usuario-logado').id;
         if(id === 0){ 
         const r = await cadastrarProntuario(nome,dtNascimento,cep,endereco,telefone,
             consulata, queixaprincipal, outrasqueixas,anamnese,hipotese,temtratant,
